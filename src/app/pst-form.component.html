@@ -1,0 +1,11 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+  <label for="password">
+    <input
+      type="password"
+      name="password"
+      id="password"
+      minlength="6"
+      formControlName="password"
+    />
+  </label>
+</form>
