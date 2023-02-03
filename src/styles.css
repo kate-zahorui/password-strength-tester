@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import "modern-normalize/modern-normalize.css";
+
+:root {
+  --gray-color: #a8a2a2;
+  --red-color: #e91919;
+  --yellow-color: #f3e336;
+  --green-color: #6ad92a;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

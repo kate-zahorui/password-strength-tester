@@ -4,6 +4,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 @Component({
   selector: 'pst-form',
   templateUrl: './pst-form.component.html',
+  styleUrls: ['./pst-form.component.css'],
 })
 export class PstFormComponent {
   form = new FormGroup({

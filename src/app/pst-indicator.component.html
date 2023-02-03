@@ -1,5 +1,6 @@
 <ul
   [ngClass]="{
+    list: true,
     'password-empty': passwordStrength === 'empty',
     'password-small': passwordStrength === 'small',
     'password-easy': passwordStrength === 'easy',
@@ -7,7 +8,7 @@
     'password-strong': passwordStrength === 'strong'
   }"
 >
-  <li></li>
-  <li></li>
-  <li></li>
+  <li class="item"></li>
+  <li class="item"></li>
+  <li class="item"></li>
 </ul>

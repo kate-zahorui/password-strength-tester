@@ -1,0 +1,17 @@
+.form {
+  width: 100%;
+  min-width: 280px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--gray-color);
+}
+
+.input::placeholder {
+  color: var(--gray-color);
+}

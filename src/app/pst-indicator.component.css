@@ -1,0 +1,40 @@
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.item {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.password-empty .item {
+  background-color: var(--gray-color);
+}
+
+.password-small .item {
+  background-color: var(--red-color);
+}
+
+.password-easy .item {
+  background-color: var(--gray-color);
+}
+
+.password-easy .item:first-child {
+  background-color: var(--red-color);
+}
+
+.password-medium .item {
+  background-color: var(--yellow-color);
+}
+
+.password-medium .item:last-child {
+  background-color: var(--gray-color);
+}
+
+.password-strong .item {
+  background-color: var(--green-color);
+}
