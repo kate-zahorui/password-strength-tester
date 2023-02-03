@@ -1,0 +1,13 @@
+<ul
+  [ngClass]="{
+    'password-empty': passwordStrength === 'empty',
+    'password-small': passwordStrength === 'small',
+    'password-easy': passwordStrength === 'easy',
+    'password-medium': passwordStrength === 'medium',
+    'password-strong': passwordStrength === 'strong'
+  }"
+>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
