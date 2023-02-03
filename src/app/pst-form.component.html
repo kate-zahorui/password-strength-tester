@@ -1,7 +1,7 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" class="form">
-  <label for="password">
+  <label for="password" class="label">
     <input
-      type="password"
+      [attr.type]="isPswdShown ? 'text' : 'password'"
       name="password"
       id="password"
       minlength="6"
@@ -9,6 +9,17 @@
       formControlName="password"
       class="input"
     />
+    <button class="button" (click)="onBtnClick()" type="button">
+      <svg class="image">
+        <use
+          [attr.href]="
+            isPswdShown
+              ? '../assets/sprite.svg#icon-eye'
+              : '../assets/sprite.svg#icon-eye-blocked'
+          "
+        ></use>
+      </svg>
+    </button>
   </label>
   <pst-indicator [passwordStrength]="passwordStrength"></pst-indicator>
 </form>

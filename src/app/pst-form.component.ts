@@ -11,6 +11,11 @@ export class PstFormComponent {
     password: new FormControl('', Validators.required),
   });
   passwordStrength = 'empty';
+  isPswdShown = false;
+
+  onBtnClick() {
+    this.isPswdShown = !this.isPswdShown;
+  }
 
   onSubmit(value: any) {
     if (!value) return;

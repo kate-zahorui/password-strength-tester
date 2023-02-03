@@ -4,14 +4,46 @@
   max-width: 400px;
   margin: 0 auto;
 }
+.label {
+  position: relative;
+}
 
 .input {
   width: 100%;
   padding: 20px;
   border-radius: 10px;
   border: 2px solid var(--gray-color);
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.24px;
 }
 
 .input::placeholder {
   color: var(--gray-color);
+}
+
+.button {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: var(--gray-color);
+}
+
+.button:hover {
+  color: #3f3f3f;
+}
+
+.image {
+  width: 25px;
+  height: 25px;
+  fill: currentColor;
 }
